@@ -1,0 +1,10 @@
+version: '1.0'
+name: pythotch_server
+
+services:
+  pythotch:
+    restart: unless-stopped
+    image: my_lw_ait:0.1
+    volumes:
+      - D:\ait2\src:/usr/app/src
+    command: python3 /usr/app/src/lw2.py
